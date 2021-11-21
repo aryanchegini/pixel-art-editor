@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="app.js" defer></script>
+    <title>etch-a-sketch</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Etch-a-Sketch</h1>
+        </header>
+        <div class="seperator"></div>
+        <main>
+            <div id="grid" class="grid"></div>
+            <div class="options">
+                <div class="grid-size">
+                    <p class="grid-size-display"><span id="left-unit">16</span> by <span id="right-unit">16</span></p>
+                    <input type="range" name="size-slider" id="size-slider" min="4" max="64" value="16">
+                </div>
+                <div class="settings">
+                    <input type="color" name="color-picker" id="color-picker" value="#000">
+                    <button id="color-button">color</button>
+                    <button id="rainbow-mode">rainbow</button>
+                    <button id="eraser">eraser</button>
+                    <button id="clear">clear</button>                    
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
