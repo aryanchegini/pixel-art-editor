@@ -10,7 +10,7 @@
     height: 100vh;
     color: whitesmoke;
     display: grid;
-    grid-template: 180px 4vh 60vh 10vh / 1fr;
+    grid-template: 110px 4vh 70vh 10vh / 1fr;
     border: whitesmoke solid 5px;
 }
 
@@ -33,7 +33,7 @@ header {
     background-color: whitesmoke;
     height: 0.5vh;
     position: relative;
-    top: -30px;
+    top: 0px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -48,10 +48,14 @@ main {
 
 #grid {
     border: whitesmoke solid 5px;
-    width: 85vw;
-    height: 85vw;
+    width: 70vw;
+    height: 70vw;
 }
 
 button {
     border: none;
+}
+
+.options {
+    
 }
