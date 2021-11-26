@@ -15,21 +15,21 @@
             <h1 id="title">Etch-a-Sketch</h1>
         </header>
         <main>
-            <div id="grid" class="grid"></div>
-            <div class="options">
-                <div class="grid-size">
-                    <p class="grid-size-display"><span id="left-unit">16</span> by <span id="right-unit">16</span></p>
-                    <input type="range" name="size-slider" id="size-slider" min="4" max="64" value="16">
-                </div>
-                <div class="settings">
-                    <input type="color" name="color-picker" id="color-picker" value="#000">
-                    <button id="color-button">color</button>
-                    <button id="rainbow-mode">rainbow</button>
-                    <button id="eraser">eraser</button>
-                    <button id="clear">clear</button>                    
-                </div>
-            </div>
+            <div id="drawing-grid" class="drawing-grid"></div>
         </main>
+        <div class="options">
+            <div class="grid-size">
+                <p class="grid-size-display"><span id="left-unit">16</span> by <span id="right-unit">16</span></p>
+                <input type="range" id="size-slider" min="4" max="64" value="16" step="4">
+            </div>
+            <div class="settings">
+                <input type="color" id="color-picker" value="#000">
+                <button id="color-button">color</button>
+                <button id="rainbow-mode">rainbow</button>
+                <button id="eraser">eraser</button>
+                <button id="clear">clear</button>                    
+            </div>
+        </div>
     </div>
 </body>
 </html>
