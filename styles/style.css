@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab&display=swap');
+
 :root {
-    
+    --accent-color: #052540;
 }
 
 * {
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 .container {
+    font-family: monospace;
     width: 100vw;
     height: 100vh;
-    border: solid #052540 10px;
+    border: solid var(--accent-color) 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: grid;
     grid-template-columns: 1fr 500px;
@@ -25,7 +29,12 @@ header {
     align-items: center;
 }
 
+#title {
+    font-size: 2em;
+    font-family: monospace;
+}
 
+/*GRID*/
 main {
     grid-area: 2 / 1 / 2 / 1;
     display: flex;
@@ -34,15 +43,61 @@ main {
 }
 
 #drawing-grid {
-    border: solid #052540 5px;
+    border: solid var(--accent-color) 5px;
     width: 400px;
     height: 400px;
 }
 
+/*OPTIONS*/
 .options {
     grid-area: 2 / 2 / 2 / 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
+
+.grid-size {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin: 5px;
+}
+
+button {
+    height: 50px;
+    border: var(--accent-color) solid 4px;
+    color: var(--accent-color);
+    background-color: white;
+    box-shadow: 3px 3px rgb(54, 54, 129);
+}
+
+input[type="color"] {
+    width: 105px;
+    height: 105px;
+    border: none;
+    background-color: var(--accent-color);
+}
+
+button:active {
+    box-shadow: none;
+}
+
+button:focus {
+    background-color: rgb(54, 144, 173);
+    color: white;
+}
+
