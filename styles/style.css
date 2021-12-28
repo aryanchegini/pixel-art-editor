@@ -50,6 +50,11 @@
     gap: 10px;
 }
 
+#source-link {
+    font-family: monospace;
+    
+}
+
 .input-grid {
     display: grid;
     gap: 10px;
