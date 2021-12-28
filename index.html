@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="app.js" defer></script>
-    <title>etch-a-sketch</title>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1 id="title">Etch-a-Sketch</h1>
-        </header>
-        <main>
-            <div id="drawing-grid" class="drawing-grid">
-                
-            </div>
-        </main>
-        <div class="options">
-            <div class="grid-size">
-                <p class="grid-size-display"><span id="left-unit">16</span> x <span id="right-unit">16</span></p>
-                <input type="range" id="size-slider" min="4" max="64" value="16" step="4">
-            </div>
-            <div class="settings">
-                <input type="color" id="color-picker" value="#000">
-                <div class="input-grid">
-                    <button id="color-button">Color</button>
-                    <button id="rainbow-mode">Rainbow</button>
-                    <button id="eraser">Eraser</button>
-                    <button id="clear">Clear</button>                    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="app.js" defer></script>
+        <title>etch-a-sketch</title>
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <div id="grid" class="grid"></div>
+            </main>
+            <div class="leftside">
+                <header>
+                    <h1 id="title">Etch-a-Sketch</h1>
+                </header>
+
+                <div class="options">    
+                    <div class="grid-size">
+                        <p id="size-display"></p>
+                        <input type="range" id="size-slider" min="4" max="64" value="16" step="1">
+                    </div>
+        
+                    <div class="settings">
+                        <input type="color" id="color-picker" value="#0a0b0f">
+                        <div class="input-grid">
+                            <div id="color">Color</div>
+                            <div id="rainbow">Rainbow</div>
+                            <div id="eraser">Eraser</div>
+                            <div id="clear">Clear</div>                    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
