@@ -53,9 +53,9 @@ function changeBlockColor(e) {
     if (currentMode === 'color') {
         e.target.style.backgroundColor = selectedColor;
     } else if (currentMode === 'rainbow') {
-        const randomR = Math.floor(Math.random() * 256)
-        const randomG = Math.floor(Math.random() * 256)
-        const randomB = Math.floor(Math.random() * 256)
+        const randomR = Math.floor(Math.random() * 256);
+        const randomG = Math.floor(Math.random() * 256);
+        const randomB = Math.floor(Math.random() * 256);
         e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`;
     } else if (currentMode === 'eraser') {
         e.target.style.backgroundColor = '#fff';
