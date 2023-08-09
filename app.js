@@ -1,4 +1,4 @@
-const DEFAULTGRIDSIZE = 16;
+const DEFAULTGRIDSIZE = 32;
 const DEFAULTCOLOUR = '#000';
 const DEFAULTMODE = 'color';
 

@@ -1,37 +1,27 @@
 :root {
     --accent-color: #052540;
-}
-
-* {
     box-sizing: border-box;
-    font-family: monospace;
 }
 
 .container {
-    font-family: monospace;
-    width: 100vw;
-    height: 100vh;
-    border: solid var(--accent-color) 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: grid;
-    grid-template-columns: 400px 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
+    padding: 2em;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
 
-/********LEFT********/
-.leftside {
-    grid-area: 1 / 1 / 1 / 1;
+#grid {
+    width: 400px;
+    height: 400px;
     display: grid;
-    grid-template-rows: 150px 1fr;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 0 auto;
 }
 
-/*OPTIONS*/
 .options {
-    grid-area: 2 / 1 / 2 / 1;
+    margin: 1em auto;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
 }
 
@@ -42,24 +32,11 @@
     align-items: center;
 }
 
-.settings {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-#source-link {
-    font-family: monospace;
-    
-}
-
 .input-grid {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
-    margin: 5px;
+    margin: 1.2em auto;
 }
 
 input[type="color"] {
@@ -72,7 +49,6 @@ input[type="color"] {
 
 .input-grid div {
     color: var(--accent-color);
-    font-family: monospace;
     font-weight: 500;
     height: 50px;
     width: 75px;
@@ -85,10 +61,6 @@ input[type="color"] {
     transition: transform 0.1s ease-in-out;
 }
 
-input[type="color"]:hover,
-.input-grid div:hover {
-    transform: scale(1.05);
-}
 
 .active-button {
     color: white !important;
@@ -96,52 +68,11 @@ input[type="color"]:hover,
     font-weight: 700;
 }
 
-#size-display {
-    cursor: default;
-    font-family: monospace;
-}
-
-header {
-    grid-area: 1 / 1 / 1 / 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#title {
-    font-size: 2em;
-    font-family: monospace;
-    font-weight: bolder;
-    cursor: default;
-}
-
-
-
-/*********RIGHT*********/
-
-/*GRID*/
-main {
-    grid-area: 1 / 2 / 1 / 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#grid {
-    width: 400px;
-    height: 400px;
-    display: grid;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-
-
+/*Input styling*/
 /***SLIDER STYLING***/
 input[type=range] {
     height: 34px;
     -webkit-appearance: none;
-    margin: 10px 0;
-    width: 100%;
 }
 input[type=range]:focus {
 outline: none;
@@ -225,27 +156,4 @@ background: var(--accent-color);
 }
 input[type=range]:focus::-ms-fill-upper {
 background: var(--accent-color);
-}
-
-/* MEDIA SCREENS */
-
-@media (max-width: 700px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    #grid {
-        width: 80vw;
-        height: 80vw;
-    }
-
-    @media (max-height: 750px) {
-        .leftside {
-            grid-template-rows: 50px 1fr;
-        }
-    }
 }
