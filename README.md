@@ -1,6 +1,5 @@
-# etch-a-sketch
+# Pixel art editor
 
-a 'the odin project' project <br>
-by aryan chegini
+A 'The Odin Project' project
 
 [Live Preview](https://aryanchegini.github.io/etch-a-sketch/)
